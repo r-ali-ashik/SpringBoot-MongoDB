@@ -25,7 +25,7 @@ public class TestController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public User sayHi(){
+    public User addUser(){
         return userRepository.save(new User("1", "ali", "test@mail.com", false));
     }
 }
